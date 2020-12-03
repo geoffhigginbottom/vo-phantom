@@ -27,3 +27,11 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
+*.DS_Store
+*.ignore
+*.tfvars
+lambda_function.zip
+lambda_function.py
+phantom.py
+victorops.py
