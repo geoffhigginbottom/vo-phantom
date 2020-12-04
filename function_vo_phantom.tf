@@ -144,11 +144,11 @@ resource "aws_lambda_permission" "vo_phantom_apigw" {
   source_arn = "${aws_api_gateway_rest_api.vo_phantom.execution_arn}/*/*"
 }
 
-### Debugging Outputs
-output "vo_phantom_arns" {
-  value =  formatlist(
-    "%s, %s", 
-    aws_lambda_function.vo_phantom.function_name,
-    aws_lambda_function.vo_phantom.arn
-  )
-}
+# ### Debugging Outputs ###
+# output "vo_phantom_arns" {
+#   value =  formatlist(
+#     "%s, %s", 
+#     aws_lambda_function.vo_phantom.function_name,
+#     aws_lambda_function.vo_phantom.arn
+#   )
+# }
